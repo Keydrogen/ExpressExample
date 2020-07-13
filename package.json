@@ -1,0 +1,17 @@
+{
+  "name": "jsdoc-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "generate": "swagger-jsdoc-generator ./config/JsDoc.js > ./documentation/SwaggerDoc.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1"
+  }
+}

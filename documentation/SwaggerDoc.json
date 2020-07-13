@@ -1,0 +1,44 @@
+{
+  "info": {
+    "title": "My sample NodeJS API",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "swagger": "2.0",
+  "paths": {
+    "/login": {
+      "post": {
+        "description": "Login to the application",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "description": "Email to use for login.",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "description": "User's password.",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "login"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "responses": {},
+  "parameters": {},
+  "securityDefinitions": {},
+  "tags": []
+}
